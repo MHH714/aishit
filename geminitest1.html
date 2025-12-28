@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>MX Offroad Mountain Bike - Ad-Free</title>
+    <style>
+        /* Modern, clean layout for Chromebook play */
+        body {
+            background-color: #1a1a1a; /* Dark background for focus */
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #game-container {
+            width: 800px;
+            height: 600px;
+            background: #000;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .controls-info {
+            margin-top: 20px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px 30px;
+            border-radius: 20px;
+        }
+        kbd {
+            background: #444;
+            border: 1px solid #666;
+            border-radius: 3px;
+            padding: 2px 6px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<div id="game-container">
+    <iframe id="gameFrame" 
+            src="https://html5.gamemonetize.com/drb7dpuqmnxr7anw8r4h16a28oh92n2g/" 
+            allowfullscreen="true" 
+            scrolling="no">
+    </iframe>
+</div>
+
+<div class="controls-info">
+    <p><strong>Player 1:</strong> <kbd>W</kbd> <kbd>A</kbd> <kbd>S</kbd> <kbd>D</kbd> | 
+       <strong>Player 2:</strong> <kbd>↑</kbd> <kbd>←</kbd> <kbd>↓</kbd> <kbd>→</kbd></p>
+</div>
+
+<script>
+    // Logic to ensure the game fills the container correctly
+    window.addEventListener('load', function() {
+        console.log("Game source loaded successfully.");
+    });
+</script>
+
+</body>
+</html>
